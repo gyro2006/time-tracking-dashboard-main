@@ -1,0 +1,245 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.daily {
+    display: block;
+}
+.weekly {
+    display: none;
+}
+.monthly {
+    display: none;
+}
+.daily.show {
+    display: block;
+}
+.weekly.show {
+    display: block;
+}
+.monthly.show {
+    display: block;
+}
+.daily.hide {
+    display: none;
+}
+.weekly.hide {
+    display: none;
+}
+.monthly.hide {
+    display: none;
+}
+@media (min-width: 800px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 98vh;
+        flex-direction: column;
+    }
+    .container {
+        display: grid;
+        height: 500px;
+        width: 1000px;  
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "a b c d" "a e f g";
+        gap: 20px;
+    }
+    .large_card {
+        grid-area: a;
+    }
+    .pfp {
+        height: 65%;
+        padding: 35px;
+        padding-bottom: 0;
+    }
+    .jeremy_img {
+        height: 70px;
+        margin-bottom: 30px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 35px;
+        margin-top: -20px;
+    }
+    .previous {
+    margin-left: 25px;
+    margin-top: 12px;
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+    font-size: 14px;
+}
+}
+body {
+    font-family: "Rubik", sans-serif;
+    color: white;
+    background-color: hsl(226, 43%, 10%);
+}
+.large_card {
+    border-radius: 15px;
+    background-color: hsl(235, 46%, 20%);
+}
+.jeremy_img {
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.report_for {
+    color: hsl(236, 100%, 87%);
+    font-size: 14px;
+}
+.name {
+    display: block;
+    font-size: 35px;
+    font-weight: 300;
+}
+.pfp {
+    border-radius: 15px;
+    background-color: hsl(246, 80%, 60%);
+}
+button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    width: 50px;
+    border: none;
+    background: none;
+    color: hsl(235, 45%, 61%);
+    outline: none;
+    cursor: pointer; 
+    text-align: left;
+    line-height: 33px;
+}
+button:focus-within {
+    color: white;
+}
+button:hover {
+    color: white;
+}
+.card {
+    display: flex;
+    align-items: end;
+    border-radius: 15px 15px 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.icon {
+    position: absolute;
+    left: 140px;
+    top: -5px;
+}
+.small_card {
+    height: 80%;
+    width: 100%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    z-index: 1000;
+}
+.small_card:hover {
+    background-color: hsl(235, 46%, 32%);
+    cursor: pointer;
+}
+.title {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    margin-right: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.dots {
+    height: 5px;
+    margin: auto;
+    margin-right: 30px;
+}
+.dots:hover {
+    filter: brightness(500%);
+}
+.current {
+    margin-left: 25px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+@media (max-width:800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container {
+        width: 300px;
+        margin-top: 100px;
+    }
+    .large_card {
+        height: 180px;
+    }
+    .pfp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+    }
+    .name {
+        font-size: 24px;
+    }
+    .jeremy_img {
+        height: 50px;
+        margin-left: -10px;
+        margin-right: 15px;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    button {
+        margin-top: 10px;
+    }
+    .card {
+        margin-top: 20px;
+        height: 150px;
+    }
+    .icon {
+        left: 205px;
+    }
+    .small_card {
+        height: 75%;
+    }
+    .title {
+        margin-bottom: 7px;
+    }
+    .current {
+        font-size: 30px;
+    }
+    .previous {
+        color: hsl(236, 100%, 87%);
+        font-weight: 300;
+        margin: auto;
+        margin-right: 30px;
+        font-size: 14px;
+    }
+    .hours {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+}
+.play {
+    background-color: hsl(195, 74%, 62%);
+}
+.study {
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+.self_care {
+    background-color: hsl(43, 84%, 65%);
+}

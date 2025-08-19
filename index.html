@@ -8,69 +8,114 @@
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="index.js"></script>
 </head>
 <body>
+  <div class="container">
+    <div class="large_card">
+      <div class="pfp">
+        <div><img src="images/image-jeremy.png" alt="photo of Jeremy" class="jeremy_img"></div>
+        <div>
+          <span class="report_for">Report for</span>
+          <span class="name">Jeremy Robson</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="daily_btn">Daily</button> 
+        <button id="weekly_btn">Weekly</button> 
+        <button id="monthly_btn">Monthly</button> 
+      </div>
+    </div>
+    <div class="card work">
+      <img src="images/icon-work.svg" alt="work icon" class="icon">
+      <div class="small_card">
+        <div class="title"><div id="title_1"></div><img src="images/icon-ellipsis.svg" alt="three dots" class="dots"></div>
+        <div class="hours">
+          <div id="daily_1" class="daily current"></div> <!-- daily -->
+          <div id="daily_previous_1" class="daily previous">Yesterday - </div> <!-- daily -->
+          <div id="weekly_1" class="weekly current"></div> <!-- weekly -->
+          <div id="weekly_previous_1" class="weekly previous">Last Week - </div> <!-- weekly -->
+          <div id="monthly_1" class="monthly current"></div> <!-- monthly -->
+          <div id="monthly_previous_1" class="monthly previous">Last Month - </div><!-- monthly -->
+        </div>
+      </div>
+    </div>
+    <div class="card play">
+      <img src="images/icon-play.svg" alt="play icon" class="icon">
+      <div class="small_card">
+        <div class="title"><div id="title_2"></div><img src="images/icon-ellipsis.svg" alt="three dots" class="dots"></div>
+        <div class="hours">
+          <div id="daily_2" class="daily current"></div> <!-- daily -->
+          <div id="daily_previous_2" class="daily previous">Yesterday - </div><!-- daily -->
+          <div id="weekly_2" class="weekly current"></div><!-- weekly -->
+          <div id="weekly_previous_2" class="weekly previous">Last Week - </div><!-- weekly -->
+          <div id="monthly_2" class="monthly current"></div><!-- monthly -->
+          <div id="monthly_previous_2" class="monthly previous">Last Month - </div><!-- monthly -->
+        </div>
+      </div>
+    </div>
+    <div class="card study">
+      <img src="images/icon-study.svg" alt="study icon" class="icon">
+      <div class="small_card">
+        <div class="title"><div id="title_3"></div><img src="images/icon-ellipsis.svg" alt="three dots" class="dots"></div>
+        <div class="hours">
+          <div id="daily_3" class="daily current"></div> <!-- daily -->
+          <div id="daily_previous_3" class="daily previous">Yesterday - </div><!-- daily -->
+          <div id="weekly_3" class="weekly current"></div> <!-- weekly -->
+          <div id="weekly_previous_3" class="weekly previous">Last Week - </div><!-- weekly -->
+          <div id="monthly_3" class="monthly current"></div><!-- monthly -->
+          <div id="monthly_previous_3" class="monthly previous">Last Month - </div><!-- monthly -->
+        </div>
+      </div>
+    </div>
+    <div class="card exercise">
+      <img src="images/icon-exercise.svg" alt="exercise icon" class="icon">
+      <div class="small_card">
+        <div class="title"><div id="title_4"></div><img src="images/icon-ellipsis.svg" alt="three dots" class="dots"></div>
+        <div class="hours">
+          <div id="daily_4" class="daily current"></div> <!-- daily -->
+          <div id="daily_previous_4" class="daily previous">Yesterday - </div><!-- daily -->
+          <div id="weekly_4" class="weekly current"></div><!-- weekly -->
+          <div id="weekly_previous_4" class="weekly previous">Last Week - </div><!-- weekly -->
+          <div id="monthly_4" class="monthly current"></div><!-- monthly -->
+          <div id="monthly_previous_4" class="monthly previous">Last Month - </div><!-- monthly -->
+        </div>
+      </div>
+    </div>
+    <div class="card social">
+      <img src="images/icon-social.svg" alt="social icon" class="icon">
+      <div class="small_card">
+        <div class="title"><div id="title_5"></div><img src="images/icon-ellipsis.svg" alt="three dots" class="dots"></div>
+        <div class="hours">
+          <div id="daily_5" class="daily current"></div> <!-- daily -->
+          <div id="daily_previous_5" class="daily previous">Yesterday - </div><!-- daily -->
+          <div id="weekly_5" class="weekly current"></div><!-- weekly -->
+          <div id="weekly_previous_5" class="weekly previous">Last Week - </div><!-- weekly -->
+          <div id="monthly_5" class="monthly current"></div><!-- monthly -->
+          <div id="monthly_previous_5" class="monthly previous">Last Month - </div><!-- monthly -->
+        </div>
+      </div>
+    </div>
+    <div class="card self_care">
+      <img src="images/icon-self-care.svg" alt="self care icon" class="icon">
+      <div class="small_card">
+        <div class="title"><div id="title_6"></div><img src="images/icon-ellipsis.svg" alt="three dots" class="dots"></div>
+        <div class="hours">
+          <div id="daily_6" class="daily current"></div> <!-- daily -->
+          <div id="daily_previous_6" class="daily previous">Yesterday - </div><!-- daily -->
+          <div id="weekly_6" class="weekly current"></div><!-- weekly -->
+          <div id="weekly_previous_6" class="weekly previous">Last Week - </div><!-- weekly -->
+          <div id="monthly_6" class="monthly current"></div><!-- monthly -->
+          <div id="monthly_previous_6" class="monthly previous">Last Month - </div><!-- monthly -->
+        </div>
+      </div>
+    </div>
 
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
