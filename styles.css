@@ -1,4 +1,4 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .daily {
@@ -222,6 +222,9 @@ button:hover {
     .hours {
         display: flex;
         align-items: center;
+    }
+    .attribution {
+        margin-bottom: 200px;
     }
 }
 
